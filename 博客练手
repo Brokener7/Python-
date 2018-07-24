@@ -1,0 +1,7 @@
+# （1）https://cuiqingcai.com/5517.html  跟随博客的简单练手
+#保存图片
+import requests
+ 
+r = requests.get("https://github.com/favicon.ico")
+with open('favicon.ico', 'wb') as f:
+    f.write(r.content)
